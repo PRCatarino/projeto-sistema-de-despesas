@@ -1,4 +1,4 @@
-import Header from "./components/header/Header";
+import Header from "./components/header";
 import TotalSection from "./components/section/TotalSection";
 
 
