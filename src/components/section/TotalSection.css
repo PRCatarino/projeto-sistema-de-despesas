@@ -1,0 +1,42 @@
+
+
+.total {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+    padding: 16px;
+    gap: 70px;
+    height: 125px;
+}
+
+.total-pay, .total-expense {
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    text-align: center;
+    padding: 16px;  
+    gap: 16px;
+    height: 125px;
+    width: 340px;
+}
+
+.total-pay {
+    border-bottom: 1px solid green;
+}
+
+.total-pay h1 {
+    font-size: xx-large;
+    font-weight: lighter;
+    color: green;
+}
+
+.total-expense {
+    border-bottom: 1px solid red;
+}
+
+.total-expense h1 {
+    font-size: xx-large;
+    font-weight: lighter;
+    color: red;
+}

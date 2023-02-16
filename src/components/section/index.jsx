@@ -1,15 +1,15 @@
-
+import './totalSection.css'
 
 function TotalSection() {
     return (
-        <div>
-            <div>
-                <h2>TOTAL PAGO</h2>
-                <h3>R$ 300,00</h3>
+        <div className="total">
+            <div className="total-pay">
+                <h3>TOTAL PAGO</h3>
+                <h1>R$ 300,00</h1>
             </div>
-            <div>
-                <h2>TOTAL DESPESAS</h2>
-                <h3>R$ 500,00</h3>
+            <div className="total-expense">
+                <h3>TOTAL DESPESAS</h3>
+                <h1>R$ 500,00</h1>
             </div>
         </div>
     )

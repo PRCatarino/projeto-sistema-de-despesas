@@ -1,5 +1,5 @@
 import Header from "./components/header";
-import TotalSection from "./components/section/TotalSection";
+import TotalSection from "./components/section";
 
 
 function App() {
