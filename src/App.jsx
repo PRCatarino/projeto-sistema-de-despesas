@@ -1,5 +1,6 @@
 import Header from "./components/header";
 import TotalSection from "./components/section";
+import MainTable from "./components/main";
 
 
 function App() {
@@ -12,6 +13,9 @@ function App() {
       <section>
         <TotalSection />
       </section>
+      <main>
+        <MainTable />
+      </main>
       
     </div>
   )

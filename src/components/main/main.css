@@ -1,0 +1,27 @@
+
+
+.field-search {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    gap: 10px;
+}
+
+.input-search {
+    display: flex;
+    flex-direction: column;
+    width: 272px;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.459);
+    box-shadow: 0 2px rgba(128, 128, 128, 0.281);
+    border-radius: 6px;
+}
+
+.input-search label {
+    font-size: 12px;
+}
+
+.input-search input {
+    width: 272px;
+    height: 24px;
+}
+

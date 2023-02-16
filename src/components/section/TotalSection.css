@@ -15,10 +15,13 @@
     flex-direction: column;
     box-sizing: border-box;
     text-align: center;
+    background-color: whitesmoke;
     padding: 16px;  
     gap: 16px;
     height: 125px;
     width: 340px;
+    box-shadow: 0 4px rgba(128, 128, 128, 0.281);
+    border-radius: 6px;
 }
 
 .total-pay {
