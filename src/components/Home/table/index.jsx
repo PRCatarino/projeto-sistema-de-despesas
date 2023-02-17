@@ -1,6 +1,6 @@
 import "./tableHeader.css";
 
-function TableHeader() {
+function TableExpense () {
   return (
     <div>
       <table className="table-header">
@@ -22,4 +22,4 @@ function TableHeader() {
   );
 }
 
-export default TableHeader;
+export default TableExpense;

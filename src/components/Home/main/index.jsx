@@ -1,6 +1,6 @@
 import './main.css'
 
-function MainTable() {
+function MainSearch () {
     return (
         <main className='field-search'>
             <div className='input-search'>
@@ -19,4 +19,4 @@ function MainTable() {
     )
 }
 
-export default MainTable;
+export default MainSearch;

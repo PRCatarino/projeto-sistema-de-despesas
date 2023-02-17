@@ -1,7 +1,7 @@
 import Header from "./components/Home/header";
 import TotalSection from "./components/Home/section";
-import MainTable from "./components/Home/main";
-import TableHeader from "./components/Home/table/tableHeader";
+import MainSearch from "./components/Home/main";
+import TableExpense from "./components/Home/table";
 
 
 function App() {
@@ -15,10 +15,10 @@ function App() {
         <TotalSection />
       </section>
       <main>
-        <MainTable />
+        <MainSearch />
       </main>
       <table>
-        <TableHeader />
+        <TableExpense />
       </table>
       
     </div>
