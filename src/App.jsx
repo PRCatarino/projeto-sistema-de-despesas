@@ -1,6 +1,7 @@
-import Header from "./components/header";
-import TotalSection from "./components/section";
-import MainTable from "./components/main";
+import Header from "./components/Home/header";
+import TotalSection from "./components/Home/section";
+import MainTable from "./components/Home/main";
+import TableHeader from "./components/Home/table/tableHeader";
 
 
 function App() {
@@ -16,6 +17,9 @@ function App() {
       <main>
         <MainTable />
       </main>
+      <table>
+        <TableHeader />
+      </table>
       
     </div>
   )
