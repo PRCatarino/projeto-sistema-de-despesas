@@ -1,6 +1,6 @@
 import "./tableHeader.css";
 
-function TableExpense () {
+function TableExpense() {
   return (
     <div>
       <table className="table-header">
@@ -17,8 +17,12 @@ function TableExpense () {
           <td>PAGO</td>
         </tr>
       </table>
-      <button type="button" className="btn-table">ADICIONAR DESPESA</button>
-    </div>  
+      <div className="div-btn-table">
+        <button type="button" className="btn-table">
+          ADICIONAR DESPESA
+        </button>
+      </div>
+    </div>
   );
 }
 

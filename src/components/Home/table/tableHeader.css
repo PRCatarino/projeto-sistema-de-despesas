@@ -25,6 +25,13 @@ table {
     padding: 0 4px;
 }
 
+.div-btn-table {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 10px;
+    width: 80%;
+}
+
 .btn-table {
     background-color: #2196F3;
     color: white;
@@ -32,5 +39,5 @@ table {
     height: 40px;
     border-radius: 4px;
     border: none;
-    
+    cursor: pointer;
 }
