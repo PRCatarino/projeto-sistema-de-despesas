@@ -17,9 +17,9 @@ function App() {
       <main>
         <MainSearch />
       </main>
-      <table>
+      <div>
         <TableExpense />
-      </table>
+      </div>
       
     </div>
   )

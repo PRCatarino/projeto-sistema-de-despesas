@@ -1,22 +1,32 @@
-import "./tableHeader.css";
+import { useEffect, useState } from "react";
+import './expenseTable.css';
 
 function TableExpense() {
+  const [id, SetId] = useState('');
+  const [user, setUser] = useState('');
+  const [amount, setAmount] = useState('');
+  const [status, setStatus] = useState(false);
+
+  useEffect(() => {
+    fetch("http://localhost:3000/expenses")
+    .then((response) => response.json())
+    .then((data) => setData(data))
+  },[])
+
   return (
-    <div>
-      <table className="table-header">
-        <tr>
-          <th>ID</th>
-          <th>Usuário</th>
-          <th>Pendente</th>
-          <th>Status</th>
-        </tr>
-        <tr className="table-data">
-          <td>01</td>
-          <td>guilherme@gmail.com</td>
-          <td>R$ 100,00</td>
-          <td>PAGO</td>
-        </tr>
-      </table>
+    <div className="table-expense">
+      <div className="table-header">
+          <div>ID</div>
+          <div>Usuário</div>
+          <div>Despesa</div>
+          <div>Status</div>
+      </div>
+      <div className="table-data">
+          <div name="id">01</div>
+          <div>guilherme@gmail.com</div>
+          <div>R$ 100,00</div>
+          <div>PAGO</div>
+      </div>
       <div className="div-btn-table">
         <button type="button" className="btn-table">
           ADICIONAR DESPESA
