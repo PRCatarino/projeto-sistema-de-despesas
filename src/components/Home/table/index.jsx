@@ -1,36 +1,41 @@
 import { useEffect, useState } from "react";
-import './expenseTable.css';
+import "./expenseTable.css";
+
 
 function TableExpense() {
-  const [id, SetId] = useState('');
-  const [user, setUser] = useState('');
-  const [amount, setAmount] = useState('');
-  const [status, setStatus] = useState(false);
+  const [data, setData] = useState([]);
 
   useEffect(() => {
     fetch("http://localhost:3000/expenses")
-    .then((response) => response.json())
-    .then((data) => setData(data))
-  },[])
+      .then((response) => response.json())
+      .then((data) => setData(data));
+  }, []);
 
   return (
     <div className="table-expense">
       <div className="table-header">
-          <div>ID</div>
-          <div>Usuário</div>
-          <div>Despesa</div>
-          <div>Status</div>
+        <div>ID</div>
+        <div>Usuário</div>
+        <div>Despesa</div>
+        <div>Status</div>
       </div>
       <div className="table-data">
-          <div name="id">01</div>
-          <div>guilherme@gmail.com</div>
-          <div>R$ 100,00</div>
-          <div>PAGO</div>
-      </div>
-      <div className="div-btn-table">
-        <button type="button" className="btn-table">
-          ADICIONAR DESPESA
-        </button>
+        {data.map((item) => (
+          <>
+            <div name="id" value="id">
+              {item.id}
+            </div>
+            <div name="userID" value="userID">
+              {item.userID}
+            </div>
+            <div name="amount" value="amount">
+              {item.amount}
+            </div>
+            <div name="status" value="status">
+              {item.status}
+            </div>
+          </>
+        ))}
       </div>
     </div>
   );
