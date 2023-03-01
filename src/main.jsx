@@ -4,10 +4,13 @@ import App from './App'
 import './index.css'
 import ExpenseProvider from './components/context/expense-context'
 
+
+
+
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <ExpenseProvider>
-      <App />
+      <App/>
     </ExpenseProvider>
   </React.StrictMode>,
 )

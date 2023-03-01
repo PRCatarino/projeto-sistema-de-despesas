@@ -13,6 +13,8 @@
     padding: 0 10px;
 }
 
-.home-header h4 {
+.home-header a {
     padding: 0 50px;
+    font-weight: bold;
+    cursor: pointer;
 }

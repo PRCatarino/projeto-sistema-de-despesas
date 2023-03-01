@@ -1,10 +1,9 @@
 import { useEffect, useState } from "react";
 import "./style.css";
-import TableExpense from "../../Home/table";
-import { Create } from "../../services/expense.service";
+import { Create } from "../services/expense.service";
 import { useRef } from "react";
-import { ListCategories } from "../../services/categories.services";
-import { ListUsers } from "../../services/users.services";
+import { ListCategories } from "../services/categories.services";
+import { ListUsers } from "../services/users.services";
 
 function Modal({ children, isOpen, setIsOpen }) {
   if (!isOpen) return null;

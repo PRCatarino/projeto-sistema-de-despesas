@@ -5,6 +5,7 @@
     justify-content: center;
     align-items: center;
     position: relative;
+    position: absolute;
 }
 
 .form-modal {
@@ -15,7 +16,6 @@
     width: 450px;
     height: 350px;
     border-radius: 8px;
-    border: 1px solid rgba(0, 0, 0, 0.418);
     padding: 30px 70px;
     gap: 5px;
 }

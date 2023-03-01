@@ -1,7 +1,6 @@
 import { useContext, useEffect, useState } from "react";
-import { expenseContext } from "../../context/expense-context";
+import { expenseContext } from "../context/expense-context";
 import "./expenseTable.css";
-
 
 function TableExpense() {
   // GetService
@@ -12,7 +11,6 @@ function TableExpense() {
       .then((data) => setData(data));
   }, []);
 
-  
   //PutService
 
   return (
