@@ -1,15 +1,19 @@
-import { useEffect, useState } from "react";
+import { useContext, useEffect, useState } from "react";
+import { expenseContext } from "../../context/expense-context";
 import "./expenseTable.css";
 
 
 function TableExpense() {
+  // GetService
   const [data, setData] = useState([]);
-
   useEffect(() => {
     fetch("http://localhost:3000/expenses")
       .then((response) => response.json())
       .then((data) => setData(data));
   }, []);
+
+  
+  //PutService
 
   return (
     <div className="table-expense">
@@ -26,7 +30,7 @@ function TableExpense() {
               {item.id}
             </div>
             <div name="userID" value="userID">
-              {item.userID}
+              <a href="#">{item._user.email}</a>
             </div>
             <div name="amount" value="amount">
               {item.amount}
