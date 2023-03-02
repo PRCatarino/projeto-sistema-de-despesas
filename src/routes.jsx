@@ -11,7 +11,7 @@ export default function Routers() {
         <BrowserRouter>
             <Routes>
                 <Route path= '/' element={<Home/>} />
-                <Route path= 'usuarios' element={<Users/>} />
+                <Route path= 'users' element={<Users/>} />
                 <Route path= 'table' element={<Table/>}/>
             </Routes>
         </BrowserRouter>

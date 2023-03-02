@@ -1,8 +1,11 @@
+import { useState } from "react";
+
 import TotalSection from "../../components/section";
 import MainSearch from "../../components/main";
 import TableExpense from "../../components/table";
 import Modal from "../../components/Modal";
-import { useState } from "react";
+
+
 export default function Users(){
     const [modalOpen, setModalOpen] = useState(false)
     return(
@@ -20,7 +23,7 @@ export default function Users(){
                  (true);
               }}
             >
-              ADICIONAR DESPESA
+              ADICIONAR USUARIO
             </button>
           </div>
         </div>
