@@ -4,6 +4,10 @@ export async function Create(body) {
       body:JSON.stringify(body),
       headers: {"Content-Type": "application/json"},
     }).then((response) => response.json())
+}
 
-  console.log(body)
+export async function List() {
+  return fetch("http://localhost:3000/expenses",{
+    method:'GET',
+  }).then((response) => response.json())
 }

@@ -1,11 +1,19 @@
 import { createContext, useState } from "react";
+import { List } from "../services/expense.service";
 
 export const expenseContext = createContext({});
 
 export function ExpenseProvider({ children }) {
-  const [expense, setExpense] = useState([]);
+  const [expenses, setExpenses] = useState([]);
+
+  function fetchExpenses()  {
+    List().then((res) => {
+      setExpenses(res)
+    })
+  }
+
   return (
-    <expenseContext.Provider value={{ expense, setExpense }}>
+    <expenseContext.Provider value={{ expenses, setExpenses, fetchExpenses }}>
       {children}
     </expenseContext.Provider>
   );

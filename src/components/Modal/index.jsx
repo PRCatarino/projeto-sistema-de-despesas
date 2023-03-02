@@ -1,9 +1,10 @@
 import { useEffect, useState } from "react";
 import "./style.css";
 import { Create } from "../services/expense.service";
-import { useRef } from "react";
+import { useRef, useContext } from "react";
 import { ListCategories } from "../services/categories.services";
 import { ListUsers } from "../services/users.services";
+import { expenseContext } from "../context/expense-context";
 
 function Modal({ children, isOpen, setIsOpen }) {
   if (!isOpen) return null;
@@ -14,7 +15,8 @@ function Modal({ children, isOpen, setIsOpen }) {
   const inputName= useRef(null)
   const [categories, setCategories] = useState([])
   const [users, setUsers] = useState([])
-
+  const {fetchExpenses} = useContext(expenseContext);
+  
   const handleSubmit = () => {
     const body = {
       name: inputName.current.value,
@@ -24,6 +26,7 @@ function Modal({ children, isOpen, setIsOpen }) {
       status: 'PENDENTE'
     }
     Create(body)
+    fetchExpenses()
   }
 
   useEffect(() => {
