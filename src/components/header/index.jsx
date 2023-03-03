@@ -9,6 +9,7 @@ function Header() {
                 <a>| Usuários</a>
                 <a>| Categorias</a>
             </header>
+            <div className='locationPage'>Despesas</div>
         </>
     )
 }

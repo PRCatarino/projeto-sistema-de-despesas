@@ -1,4 +1,9 @@
-
+.locationPage{
+    margin:20px 0px 0px 50px;
+    color:#0ACF83;
+    font-weight: bolder;
+    cursor: default;
+}
 .home-header {
     background-color: #0ACF83;
     color: white;
