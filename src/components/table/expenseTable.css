@@ -32,3 +32,9 @@ table{
     border: none;
     cursor: pointer;
 }
+.redPending{
+    color:red;
+}
+.greenPaid{
+    color:green;
+}
