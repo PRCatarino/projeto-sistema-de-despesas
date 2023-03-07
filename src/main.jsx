@@ -3,14 +3,18 @@ import ReactDOM from "react-dom/client";
 import App from "./App";
 import "./index.css";
 import ExpenseProvider from "./components/context/expense-context";
+import { BrowserRouter } from "react-router-dom";
 import UserProvider from "./components/context/user-context";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
+
   <React.StrictMode>
-    <ExpenseProvider>
-      <UserProvider>
-        <App />
-      </UserProvider>
-    </ExpenseProvider>
+    <BrowserRouter>
+      <ExpenseProvider>
+        <UserProvider>
+          <App />
+        </UserProvider>
+      </ExpenseProvider>
+    </BrowserRouter>
   </React.StrictMode>
 );

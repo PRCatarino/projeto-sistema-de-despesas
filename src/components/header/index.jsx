@@ -1,13 +1,14 @@
 import './header.css'
+import { Link } from 'react-router-dom';
 
 function Header() {
-    console.log(window.location.pathName)
+
     return(
         <>
             <header className="home-header">
-                <a>Despesas </a>
-                <a>| Usuários</a>
-                <a>| Categorias</a>
+                <Link to="/">Despesas </Link>
+                <Link to="/users">| Usuários</Link>
+                <Link to="/category">| Usuários</Link>
             </header>
             <div className='locationPage'>Despesas</div>
         </>
