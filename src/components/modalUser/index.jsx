@@ -1,5 +1,5 @@
 import "./style.css";
-import { useRef, useContext } from "react";
+import { useRef, useContext, useEffect } from "react";
 import { userContext } from "../context/user-context";
 import { CreateUsers } from "../services/users.services";
 
@@ -17,14 +17,7 @@ export default function FormModalUser(props) {
     CreateUsers(body);
     fetchUsers();
   };
-  useEffect(() => {
-    ListCategories().then((res) => {
-      setCategories(res);
-    });
-    ListUsers().then((res) => {
-      setUsers(res);
-    });
-  }, []);
+  
 
   return (
     <div>

@@ -2,8 +2,9 @@ import { useState } from "react";
 import FormModalUser from "../../components/modalUser";
 import TotalSection from "../../components/section";
 import MainSearch from "../../components/main";
-import TableExpense from "../../components/table";
+
 import Modal from "../../components/Modal";
+import TableUsers from "../../components/table/tableUsers";
 
 
 export default function Users(){
@@ -13,7 +14,7 @@ export default function Users(){
           <TotalSection />
           <MainSearch />
         <div>
-          <TableExpense />
+          <TableUsers />
           <Modal isOpen={modalOpen}>
             <FormModalUser onClose={()=> setModalOpen(false) }/>
           </Modal>
