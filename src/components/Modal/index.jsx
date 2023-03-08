@@ -5,10 +5,10 @@ function Modal({ children, isOpen }) {
   return (
     <>
       {isOpen && (
-        <div className="container">
+        <div className="modalContainer">
           <div className="modal">
-            {children}
-          </div>
+                {children}
+          </div> 
         </div>
       )}
     </>

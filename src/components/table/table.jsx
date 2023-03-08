@@ -1,5 +1,4 @@
-
-
+import "./tableStyle.css";
 export default function Table(props) {
     const {fields, data} = props
     return (

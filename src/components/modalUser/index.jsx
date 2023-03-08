@@ -20,7 +20,7 @@ export default function FormModalUser(props) {
   
 
   return (
-    <div className="container">
+   
       <form className="form-modal">
         <div>
           <h3>ADICIONAR USUARIO</h3>
@@ -52,31 +52,5 @@ export default function FormModalUser(props) {
           </button>
         </div>
       </form>
-    </div>
   );
-}
-
-    return (
-        <div>
-            <form className="form-modal">
-                <div>
-                    <h3>ADICIONAR USUARIO</h3>
-                </div>
-                <br />
-                <label htmlFor="">Nome</label>
-                <input ref={inputName} type="text" />
-                <br />
-                <label htmlFor="">Sobrenome</label>
-                <input ref={inputLastName} type="text" />
-                <br />
-                <label htmlFor="">Email</label>
-                <input ref={inputEmail} type="text" />
-                <br/>
-                <div className="btn-modal">
-                <button type="button" className="modal-close save" onClick={() => handleSubmit()}>SALVAR</button>
-                <button type="button" className="modal-close cancel" onClick={() => props.onClose()}>CANCELAR</button>
-                </div>
-            </form>
-        </div>
-    )
 }

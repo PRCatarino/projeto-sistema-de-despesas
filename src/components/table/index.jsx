@@ -1,6 +1,5 @@
 import { useContext, useEffect, useState } from "react";
 import { expenseContext } from "../context/expense-context";
-import "./expenseTable.css";
 import Table from "./table";
 
 function TableExpense() {

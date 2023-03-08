@@ -3,7 +3,7 @@ import TotalSection from "../../components/section";
 import MainSearch from "../../components/main";
 import TableExpense from "../../components/table";
 import Modal from "../../components/Modal";
-import ExpensesModal from "../../components/modalExpenses";
+import ExpensesModal from "../../components/modalExpense";
 
 export default function Home() {
     const [modalOpen, setModalOpen] = useState(false)
@@ -11,12 +11,11 @@ export default function Home() {
     <div>
       <TotalSection />
       <Modal isOpen={modalOpen}>
-      <ExpensesModal onClose={()=>setModalOpen(false)} />
+        <ExpensesModal onClose={()=>setModalOpen(false)} />
       </Modal>
       <div className="organizationTable">
         <MainSearch />
         <TableExpense />
-        <Modal isOpen={modalOpen} setIsOpen={setModalOpen} />
         <div className="div-btn-table">
           <button
             type="button"

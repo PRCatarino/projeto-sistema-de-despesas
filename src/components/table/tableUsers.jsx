@@ -1,6 +1,5 @@
 import { useContext, useEffect, useState } from "react";
 import { userContext } from "../context/user-context";
-import "./expenseTable.css";
 import Table from "./table";
 
 function TableUsers() {

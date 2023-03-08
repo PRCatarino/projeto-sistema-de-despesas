@@ -38,8 +38,6 @@ export default function ExpensesModal(props) {
   }, []);
 
   return (
-    <div className="container">
-      <div className="modal">
         <form className="form-modal">
           <div>
             <h3>ADICIONAR DESPESA</h3>
@@ -82,7 +80,5 @@ export default function ExpensesModal(props) {
             </button>
           </div>
         </form>
-      </div>
-    </div>
   );
 }
