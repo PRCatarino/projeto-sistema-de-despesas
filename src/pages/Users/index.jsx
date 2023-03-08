@@ -1,24 +1,22 @@
 import { useState } from "react";
-
+import FormModalUser from "../../components/modalUser";
 import TotalSection from "../../components/section";
 import MainSearch from "../../components/main";
-import TableExpense from "../../components/table";
+
 import Modal from "../../components/Modal";
-import FormModalUser from "../../components/modalUser";
+import TableUsers from "../../components/table/tableUsers";
 
 
 export default function Users(){
-  const [modalOpen, setModalOpen] = useState(false)
-  return(
-    <div>
-      <TotalSection />
-      <MainSearch />
-      <div>
+    const [modalOpen, setModalOpen] = useState(false)
+    return(
+        <div>
+        <TotalSection />
+        <MainSearch />
+        <div>
           <TableExpense />
-          <Modal isOpen={modalOpen}>
-            <FormModalUser onClose={() => setModalOpen(false)}/>
-          </Modal>
-        <div className="div-btn-table">
+          <Modal isOpen={modalOpen} setIsOpen={setModalOpen} />
+          <div className="div-btn-table">
             <button
               type="button"
               className="btn-table"

@@ -1,5 +1,4 @@
 import { useState } from "react";
-
 import TotalSection from "../../components/section";
 import MainSearch from "../../components/main";
 import TableExpense from "../../components/table";
@@ -11,12 +10,13 @@ export default function Home() {
   return (
     <div>
       <TotalSection />
-      <MainSearch />
-      <div>
+      <Modal isOpen={modalOpen}>
+      <ExpensesModal onClose={()=>setModalOpen(false)} />
+      </Modal>
+      <div className="organizationTable">
+        <MainSearch />
         <TableExpense />
-        <Modal isOpen={modalOpen}>
-          <ExpensesModal onClose={() => setModalOpen(false)}/>
-        </Modal>
+        <Modal isOpen={modalOpen} setIsOpen={setModalOpen} />
         <div className="div-btn-table">
           <button
             type="button"

@@ -1,3 +1,5 @@
+
+
 export default function Table(props) {
     const {fields, data} = props
     return (
@@ -8,7 +10,12 @@ export default function Table(props) {
             <tbody>
                 {data.map((item) => (<tr>
                     {fields.map((field) => {
-                        return <td>{field.action || item[field.key]}</td>
+                        if(item.status === 'PENDENTE'){
+                            return <td className="redPending">{field.action || item[field.key]}</td>
+                        }else{
+
+                            return <td className="greenPaid ">{field.action || item[field.key]}</td>
+                        }
                     })}
                 </tr>))}
             </tbody>
