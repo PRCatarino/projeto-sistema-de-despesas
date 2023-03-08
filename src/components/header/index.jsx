@@ -8,7 +8,7 @@ function Header() {
             <header className="home-header">
                 <Link to="/">Despesas </Link>
                 <Link to="/users">| Usuários</Link>
-                <Link to="/category">| Usuários</Link>
+                <Link to="/category">| Categorias</Link>
             </header>
             <div className='locationPage'>Despesas</div>
         </>

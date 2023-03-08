@@ -1,12 +1,11 @@
 
-.organizationModal{
-    width: 100%;
+.container{
+    width: 100vw;
     height: 100vh;
     position: fixed;
-    background: rgba(0, 0, 0, 0.13);
+    background: rgba(0, 0, 0, 0.5);
     top: 0;
     display: flex;
-    justify-content: center;
     align-items: center;
     overflow: hidden;
 }

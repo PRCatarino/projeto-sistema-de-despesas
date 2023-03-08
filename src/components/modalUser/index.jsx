@@ -20,7 +20,7 @@ export default function FormModalUser(props) {
   
 
   return (
-    <div>
+    <div className="container">
       <form className="form-modal">
         <div>
           <h3>ADICIONAR USUARIO</h3>
