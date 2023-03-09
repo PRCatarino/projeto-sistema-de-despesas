@@ -1,5 +1,4 @@
 import { useEffect, useState } from "react";
-import "./style.css";
 import { Create } from "../services/expense.service";
 import { useRef, useContext } from "react";
 import { ListCategories } from "../services/categories.services";

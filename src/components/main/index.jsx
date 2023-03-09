@@ -12,7 +12,7 @@ function MainSearch () {
                 <input type="text"  />
             </div>
             <div className='input-search'>
-                <label htmlFor="">Filtr ar Por</label>
+                <label htmlFor="">Filtrar Por</label>
                 <input type="text"  />
             </div>
         </main>

@@ -1,4 +1,3 @@
-import "./style.css";
 function Modal({ children, isOpen }) {
   if (!isOpen) return null;
   
