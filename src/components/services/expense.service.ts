@@ -11,3 +11,19 @@ export async function List() {
     method:'GET',
   }).then((response) => response.json())
 }
+
+export function getTotalExpense(expenses) {
+  const total = expenses.reduce(
+    (currentTotal, expense) => currentTotal + expense.amount,
+    0
+  );
+  return total;
+}
+
+export function getTotalExpenseByStatus(expenses, status) {
+  const expensesFiltered = expenses.filter(
+    (expense) => expense.status === status
+  );
+  const total = getTotalExpense(expensesFiltered);
+  return total;
+}

@@ -12,7 +12,8 @@ export default function Routers() {
             <Route path='/' element={<Home/>} />
             <Route path='users' element={<Users/>} />
             <Route path='table' element={<Table/>} />
-            <Route path='categories' element={<Category/>} />
+            <Route path='category' element={<Category/>} />
+            <Route path='users/:id' element={<Users/>} />
         </Routes>
     );
 }

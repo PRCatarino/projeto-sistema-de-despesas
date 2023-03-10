@@ -9,12 +9,7 @@ export default function Table(props) {
             <tbody>
                 {data.map((item) => (<tr>
                     {fields.map((field) => {
-                        if(item.status === 'PENDENTE'){
-                            return <td className="redPending">{field.action || item[field.key]}</td>
-                        }else{
-
-                            return <td className="greenPaid ">{field.action || item[field.key]}</td>
-                        }
+                        return <td attr-field={field.key} attr-value={item[field.key]}>{field?.action && field.action(item)|| item[field.key]}</td>
                     })}
                 </tr>))}
             </tbody>

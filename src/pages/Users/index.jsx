@@ -18,7 +18,7 @@ export default function Users(){
           </Modal>
           <div className="organizationTable">
             <MainSearch />
-            <TableExpense />
+            <TableUsers />
             <div className="div-btn-table">
               <button
                 type="button"

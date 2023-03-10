@@ -38,3 +38,38 @@ table{
 .greenPaid{
     color:green;
 }
+td[attr-field='pendente'],
+td[attr-field="status"][attr-value="PENDENTE"] {
+  color: red;
+}
+
+td[attr-field='pago'],
+td[attr-field="status"][attr-value="PAGO"] {
+  color: green;
+}
+
+#ActionsMain {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+.btnAction {
+    width: 66px;
+    height: 30px;
+    text-transform: uppercase;
+    padding: 4px 10px;
+    border-radius: 4px;
+}
+
+#btnEdit {
+    background-color: #2196F3;
+    color: #FFFFFF;
+}
+
+#btnDelete {
+    background-color: #FFFFFF;
+    color: #D32F2F;
+    border: 1px solid #D32F2F;
+}
