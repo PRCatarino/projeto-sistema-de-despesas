@@ -11,3 +11,9 @@ export async function CreateUsers(body){
       headers: {"Content-Type": "application/json"},
     }).then((response) => response.json())
 }
+
+export async function FindUser(id){
+  fetch(`http://localhost:3000/users/${id}`,{
+      method:'GET',
+    }).then((response) => response.json())
+}

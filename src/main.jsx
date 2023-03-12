@@ -5,6 +5,7 @@ import ExpenseProvider from "./components/context/expense-context";
 import { BrowserRouter } from "react-router-dom";
 import UserProvider from "./components/context/user-context";
 import CategoryProvider from "./components/context/category-context";
+import UserIdProvider from "./components/context/userId-context";
 import "./index.css";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
@@ -13,7 +14,9 @@ ReactDOM.createRoot(document.getElementById("root")).render(
       <ExpenseProvider>
         <UserProvider>
           <CategoryProvider>
-            <App />
+            <UserIdProvider>
+             <App />
+            </UserIdProvider>
           </CategoryProvider>
         </UserProvider>
       </ExpenseProvider>
