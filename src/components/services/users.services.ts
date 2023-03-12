@@ -13,7 +13,7 @@ export async function CreateUsers(body){
 }
 
 export async function FindUser(id){
-  fetch(`http://localhost:3000/users/${id}`,{
-      method:'GET',
+  return fetch(`http://localhost:3000/users/${id}`,{
+      method:'GET'
     }).then((response) => response.json())
 }

@@ -4,7 +4,6 @@ import { useContext, useEffect } from "react";
 
 function TableUser() {
     const {user, setUser, FetchFindUser} = useContext(userContextId);
-    console.log(user)
     let {id} = useParams()
    
     useEffect(() => {
