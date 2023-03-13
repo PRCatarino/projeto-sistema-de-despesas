@@ -4,7 +4,7 @@ import { ListUsers } from "../services/users.services";
 export const userContext = createContext({});
 
 export function UserProvider({ children }) {
-  const [users, setUsers] = useState({});
+  const [users, setUsers] = useState([]);
 
   function fetchUsers()  {
     ListUsers().then((res) => {

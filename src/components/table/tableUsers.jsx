@@ -11,9 +11,10 @@ function TableUsers() {
   useEffect(() => {
     fetchUsers();
   }, []);
-
   useEffect(() => {
-    const usersMap =
+    let usersMap = []
+    console.log(users)
+    if(users){
       users.map((user) => {
         return {
           ...user,
@@ -21,8 +22,10 @@ function TableUsers() {
           pendente: getTotalExpenseByStatus(user._expenses, "PENDENTE"),
         };
       }) || [];
+    }
     setData(usersMap);
-  }, [users]);
+  },[users])
+
 
   return (
     <Table
