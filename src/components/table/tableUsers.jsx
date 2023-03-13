@@ -13,7 +13,6 @@ function TableUsers() {
   }, []);
   useEffect(() => {
     let usersMap = []
-    console.log(users)
     if(users){
       users.map((user) => {
         return {
@@ -26,10 +25,9 @@ function TableUsers() {
     setData(usersMap);
   },[users])
 
-
   return (
     <Table
-      data={data}
+      data={users}
       fields={[
         {
           label: "Id",

@@ -19,7 +19,7 @@ export default function Table(props) {
                   key={`${field.key}`}
                   attr-field={field.key}
                   attr-value={item[field.key]}
-                >
+                > 
                   {(field?.action && field.action(item)) || item[field.key]}
                 </td>
               );

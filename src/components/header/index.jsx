@@ -1,7 +1,7 @@
 import './header.css'
-import { Link } from 'react-router-dom';
+import { Link, parsePath } from 'react-router-dom';
 
-function Header() {
+function Header(props) {
 
     return(
         <>
@@ -10,7 +10,7 @@ function Header() {
                 <Link to="/users">| Usuários</Link>
                 <Link to="/category">| Categorias</Link>
             </header>
-            <div className='locationPage'>Despesas</div>
+            <div className='locationPage'>{props.location}</div>
         </>
     )
 }
